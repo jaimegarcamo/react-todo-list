@@ -2,6 +2,15 @@
   text-align: center;
 }
 
+.first-title{
+  color: white;
+  text-align : "center"
+}
+
+.insert-new-task{
+  color:white;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
