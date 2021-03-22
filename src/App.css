@@ -4,11 +4,22 @@
 
 .first-title{
   color: white;
-  text-align : "center"
+  text-align : "center";
+  font-weight: 900;
 }
 
 .insert-new-task{
   color:white;
+}
+
+.pending-tasks-text{
+  color:white;
+  font-weight: 200;
+}
+
+.task-list{
+  color:white;
+  font-style: oblique;
 }
 
 .App-logo {
