@@ -2,7 +2,8 @@ import React from 'react'
 import Input from './components/Input.jsx'
 import PendingTasks from './components/PendingTasks.jsx'
 import ButtonAdd from './components/ButtonAdd.jsx'
-import List from './components/List.jsx'
+import TaskList from './components/TaskList.jsx'
+import Counter from './components/Counter.jsx'
 import './App.css'
 
 
@@ -21,7 +22,9 @@ function App() {
       <Input />
       <ButtonAdd />
       <br></br>
-      <List />
+      <TaskList /> 
+      <br></br>
+      <Counter defaultValue={0}/>
     </div>
     
   )

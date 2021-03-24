@@ -1,9 +1,17 @@
 import React from 'react'
 
-const PendingTasks = ({pendingTasks}) => {
+const PendingTasks = () => {
+    let tasksLength;
+    if(localStorage.getItem("tasks")){
+        tasksLength = localStorage.getItem("tasks").split(",").length
+    }
+    else{
+        tasksLength = 0;
+    }
+
     return (
         <div>
-            <h3 className="pending-tasks-text">Pending Tasks: {pendingTasks}</h3>
+            <h3 className="pending-tasks-text">Pending Tasks: {tasksLength}</h3>
         </div>
     )
 }

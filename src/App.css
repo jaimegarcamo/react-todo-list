@@ -17,9 +17,19 @@
   font-weight: 200;
 }
 
+.task-list-header{
+  color:white;
+  font-style: oblique;
+}
+
 .task-list{
   color:white;
   font-style: oblique;
+  text-align : "center";
+}
+
+li{
+  text-align : "center";
 }
 
 .App-logo {
