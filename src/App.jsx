@@ -1,33 +1,59 @@
-import React from 'react'
-import Input from './components/Input.jsx'
-import PendingTasks from './components/PendingTasks.jsx'
-import ButtonAdd from './components/ButtonAdd.jsx'
-import TaskList from './components/TaskList.jsx'
-import Counter from './components/Counter.jsx'
+import React , {useState} from 'react'
+import TaskForm from './components/TaskForm'
+import TaskList from './components/TaskList'
+import TaskItem from './components/TaskItem'
+import TaskMessage from './components/TaskMessage'
 import './App.css'
+
+
+const storedTasks = localStorage.getItem("storedTasks")
+const initialTasks = storedTasks ? JSON.parse(storedTasks) : []
 
 
 function App() {
   
-  function obtainPendingTasks(){
-    return 0
+  const [tasks, setTasks] = useState(initialTasks)
+
+  
+  function handleSubmit(task){
+    const newTasks = [...tasks, task]
+    setTasks(newTasks)
+    localStorage.setItem("storedTasks", JSON.stringify(newTasks))
+  }
+
+  function handleTaskClick(id){
+    const newTasks = tasks.filter(task => task.id !== id)
+    setTasks(newTasks)
+    localStorage.setItem("storedTasks", JSON.stringify(newTasks))
   }
   
   return (
     <div className="App">
       <h1 className="first-title">To Do List</h1>
-      <PendingTasks pendingTasks={0}/>
-      <br></br>
-      <p className="insert-new-task">Insert New Task</p>
-      <Input />
-      <ButtonAdd />
-      <br></br>
-      <TaskList /> 
-      <br></br>
-      <Counter defaultValue={0}/>
+      <p className="paragraf">Pending Tasks: <span className="count-tasks">{tasks.length}</span></p>
+      <TaskForm onSubmit={handleSubmit}/>
+      {tasks.length === 0  ? <div><br></br><h1 className="task-message">Your list is empty!!</h1></div> : <div><br></br><h1 className="task-message">You've work to do:</h1></div>}
+      <TaskList >
+        {tasks.map(task => (
+          <TaskItem 
+            key={task.id} 
+            id={task.id} 
+            title={task.title} 
+            onClick={handleTaskClick}
+          />
+        ))}
+      </TaskList>
     </div>
     
   )
 }
 
 export default App
+
+
+{/* <a data-tip data-for='botonTooltip'> d(`･∀･)b </a>
+      <button data-tip data-for="botonTooltip">Tooltip</button>
+      <ul>
+      <li data-tip="" data-for="botonTooltip">elemento 1</li>
+      <li data-tip data-for="botonTooltip">elemento 2</li>
+      </ul> */}

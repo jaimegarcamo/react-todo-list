@@ -1,72 +1,79 @@
 .App {
-  text-align: center;
+  padding-left: 20px;
 }
 
 .first-title{
   color: white;
-  text-align : "center";
   font-weight: 900;
+  padding-left: 20px;
+  font-size: 100px;
 }
 
-.insert-new-task{
-  color:white;
-}
-
-.pending-tasks-text{
+.paragraf{
   color:white;
   font-weight: 200;
+  padding-left: 150px;
+  font-size: 30px;
 }
 
-.task-list-header{
+.count-tasks{
   color:white;
-  font-style: oblique;
+  font-weight: 900;
+  color:coral
 }
 
-.task-list{
+.task-form{
   color:white;
-  font-style: oblique;
-  text-align : "center";
+  padding-left: 115px;
+  padding-top: 90px;
 }
+
+.task-message{
+  color:coral;
+  font-weight: 900;
+  font-size: 50px;
+  padding-left: 30px;
+}
+
+.input-task{
+  height: 44px;
+  width: 200px;
+  font-size: 20px;
+  color: coral;
+  font-weight: 600;
+}
+
+.button-add{
+  height: 50px;
+  width: 70px;
+  font-size: 20px;
+  color:white;
+  font-weight: 600;
+  background-color:coral;
+}
+
+.error{
+  color:coral;
+  padding-left: 20px;
+  font-weight: 600;
+}
+
+ul{
+  color: white;
+  padding-left: 170px;
+  padding-top: 20px;
+  font-size: 20px;
+}
+
 
 li{
-  text-align : "center";
+  color:white;
+  text-transform: capitalize;
+  font-style: italic;
+  font-weight: 900;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-button {
-  font-size: calc(10px + 2vmin);
-}
