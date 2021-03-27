@@ -2,12 +2,12 @@ import React from 'react'
 
 function TaskItem({id, title, onClick}){
     
-    // function handleClick(){
-    //     onClick(title)
-    // }
+    function handleTooltip(){
+        console.log("HOLA")
+    }
     
     return(
-        <li onClick={() => onClick(id)}>
+        <li onClick={() => onClick(id)} onMouseOver={handleTooltip}>
             {title}
         </li>
     )

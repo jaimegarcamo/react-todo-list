@@ -4,7 +4,7 @@ import {generateId} from '../utils/generateId'
 function TaskForm({onSubmit}){
 
     const [title, setTitle] = useState("")
-    const [error, setError] = useState(null)
+    const [error, setError] = useState("")
 
     function handleInput(event){
         const newText = event.target.value
@@ -31,10 +31,10 @@ function TaskForm({onSubmit}){
     }
 
     return(
-        <form onSubmit={handleSubmit}>
-            <input placeholder="Insert new task" type="text" value={title} onChange={handleInput}/>
-            <button type="submit">Add</button>
-            {error && <p style={{color: 'red'}}>{error}</p>}
+        <form className='task-form' onSubmit={handleSubmit}>
+            <input className="input-task" placeholder="Insert new task" type="text" value={title} onChange={handleInput}/>
+            <button className="button-add" type="submit">Add</button>
+            {error && <p className="error">{error}</p>}
         </form>
     )
 }
