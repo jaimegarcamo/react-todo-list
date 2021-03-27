@@ -16,9 +16,6 @@ function TaskItem({id, title, date, onClick}){
             <div className="tasklist-element" id="tasklist-calendar">
                 <TaskListDate date={date} />
             </div>
-            {/* <div className="tasklist-element" id="tasklist-date">
-                <TaskListDate date={generateTodaysDate()} />
-            </div> */}
             <div className="tasklist-element" id="tasklist-button">
                 <TaskCompleteButton id={id} onClick={onClick} />
             </div>
