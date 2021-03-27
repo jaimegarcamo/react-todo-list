@@ -2,6 +2,7 @@ import React , {useState} from 'react'
 import TaskForm from './components/TaskForm'
 import TaskList from './components/TaskList'
 import TaskItem from './components/TaskItem'
+import TaskMessage from './components/TaskMessage'
 import './App.css'
 
 
@@ -31,6 +32,7 @@ function App() {
       <h1 className="first-title">To Do List</h1>
       <p className="paragraf">Pending Tasks: <span className="count-tasks">{tasks.length}</span></p>
       <TaskForm onSubmit={handleSubmit}/>
+      {tasks.length === 0  ? <div><br></br><h1 className="task-message">Your list is empty!!</h1></div> : <div><br></br><h1 className="task-message">You've work to do:</h1></div>}
       <TaskList >
         {tasks.map(task => (
           <TaskItem 

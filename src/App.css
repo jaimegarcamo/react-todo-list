@@ -28,6 +28,13 @@
   padding-top: 90px;
 }
 
+.task-message{
+  color:coral;
+  font-weight: 900;
+  font-size: 50px;
+  padding-left: 30px;
+}
+
 .input-task{
   height: 44px;
   width: 200px;
@@ -54,7 +61,7 @@
 ul{
   color: white;
   padding-left: 170px;
-  padding-top: 50px;
+  padding-top: 20px;
   font-size: 20px;
 }
 
