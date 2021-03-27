@@ -2,29 +2,25 @@ import React , {useState} from 'react'
 import TaskForm from './components/TaskForm'
 import TaskList from './components/TaskList'
 import TaskItem from './components/TaskItem'
+import useLocalStorage from './hooks/useLocalStorage'
 import TaskMessage from './components/TaskMessage'
 import './App.css'
 
 
-const storedTasks = localStorage.getItem("storedTasks")
-const initialTasks = storedTasks ? JSON.parse(storedTasks) : []
-
 
 function App() {
   
-  const [tasks, setTasks] = useState(initialTasks)
+  const [tasks, setTasks] = useLocalStorage("storedTasks", [])
 
   
   function handleSubmit(task){
     const newTasks = [...tasks, task]
     setTasks(newTasks)
-    localStorage.setItem("storedTasks", JSON.stringify(newTasks))
   }
 
   function handleTaskClick(id){
     const newTasks = tasks.filter(task => task.id !== id)
     setTasks(newTasks)
-    localStorage.setItem("storedTasks", JSON.stringify(newTasks))
   }
   
   return (
