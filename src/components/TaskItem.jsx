@@ -1,17 +1,29 @@
 import React from 'react'
-import ToolTip from 'react-tooltip'
+import TaskCompleteButton from './TaskCompleteButton'
+import TaskListDate from './TaskListDate'
 
-function TaskItem({id, title, onClick}){
+
+function TaskItem({id, title, date, onClick}){
     
     
     return(
-        <>
-            <li data-tip data-for='botonTooltip' onClick={() => onClick(id)}>
-                {title}
-            </li>
-            <ToolTip type="light" place="right" id='botonTooltip'>Click to remove task</ToolTip>
-        </>
+        <div className="tasklist-container">
+            <div className="tasklist-element" id="tasklist-text">
+                <li>
+                    {title}
+                </li>
+            </div>
+            <div className="tasklist-element" id="tasklist-calendar">
+                <TaskListDate date={date} />
+            </div>
+            <div className="tasklist-element" id="tasklist-button">
+                <TaskCompleteButton id={id} onClick={onClick} />
+            </div>
+        </div>
     )
 }
+
+
+
 
 export default TaskItem

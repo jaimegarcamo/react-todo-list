@@ -39,6 +39,7 @@ function App() {
             key={task.id} 
             id={task.id} 
             title={task.title} 
+            date={task.date}
             onClick={handleTaskClick}
           />
         ))}
@@ -51,9 +52,3 @@ function App() {
 export default App
 
 
-{/* <a data-tip data-for='botonTooltip'> d(`･∀･)b </a>
-      <button data-tip data-for="botonTooltip">Tooltip</button>
-      <ul>
-      <li data-tip="" data-for="botonTooltip">elemento 1</li>
-      <li data-tip data-for="botonTooltip">elemento 2</li>
-      </ul> */}
