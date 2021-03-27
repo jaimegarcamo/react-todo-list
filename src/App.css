@@ -1,18 +1,19 @@
 .App {
-  padding-left: 20px;
+  padding-left: 0px;
+  
 }
 
 .first-title{
   color: white;
   font-weight: 900;
-  padding-left: 20px;
+  padding-left: 275px;
   font-size: 100px;
 }
 
 .paragraf{
   color:white;
   font-weight: 200;
-  padding-left: 150px;
+  padding-left: 405px;
   font-size: 30px;
 }
 
@@ -24,7 +25,7 @@
 
 .task-form{
   color:white;
-  padding-left: 115px;
+  padding-left: 268px;
   padding-top: 90px;
 }
 
@@ -32,24 +33,36 @@
   color:coral;
   font-weight: 900;
   font-size: 50px;
-  padding-left: 30px;
+  padding-left: 290px;
 }
 
 .input-task{
   height: 44px;
-  width: 200px;
+  width: 300px;
   font-size: 20px;
   color: coral;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+.input-date{
+  border-radius: 10px;
+  height: 44px;
+  width: 185px;
+  font-size: 20px;
+  color:grey;
   font-weight: 600;
 }
 
 .button-add{
   height: 50px;
-  width: 70px;
+  width: 500px;
   font-size: 20px;
   color:white;
   font-weight: 600;
   background-color:coral;
+  border-radius: 10px;
+  
 }
 
 .error{
@@ -58,11 +71,50 @@
   font-weight: 600;
 }
 
+.tasklist-container{
+  overflow: hidden;
+  color: white;
+  font-size: 20px;
+}
+
+
+.tasklist-element{
+  float:left;
+}
+
+#tasklist-text{
+  padding-left: 100px;
+  height: 10px;
+  width: 300px;
+  color:black
+}
+
+#tasklist-button{
+  padding-left: 1px;
+}
+
+.info-date{
+  height: 17px;
+  width: 125px;
+  color:coral;
+  margin-block-start: 4px;
+  margin-left: 1px;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+
+.button-delete{
+  background-color: coral;
+  color:white;
+  font-weight: 600;
+}
+
 ul{
   color: white;
   padding-left: 170px;
   padding-top: 20px;
   font-size: 20px;
+  overflow: hidden;
 }
 
 
