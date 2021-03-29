@@ -29,7 +29,7 @@ function TaskItem({id, title, date, onClickDelete, onClickAdd}){
     
     return(
         <li className="tasklist-container">
-            <div className="tasklist-element" id={style} onClick={handleStyle}><TaskItemText title={title} style={style} /></div>
+            <div className="tasklist-element" id={style} onClick={handleStyle}><TaskItemText title={title} /></div>
             <div className="tasklist-element" id="tasklist-calendar"><TaskListDate date={date} /></div>
             <div className="tasklist-element" id="tasklist-button"><TaskDeleteButton id={id} onClick={onClickDelete} /></div>
         </li>
