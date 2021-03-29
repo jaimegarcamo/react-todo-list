@@ -1,16 +1,17 @@
-import React, {useState} from 'react'
+import React from 'react'
 
 function TaskMessage({tasks}){
-    //console.log(children)
 
-    const [message, setMessage] = useState("")
-
+    let message = ""
+    
     if(tasks === 0){
-        setMessage("Your list is empty!")
-        return(<h1>{message}</h1>)
-    }else
-        setMessage("")
-        return(<h1></h1>)
+       message = "Your list is empty!"
+    }
+    else{
+        message = "You've work to do:"
+    }
+
+    return <h1 className="task-message">{message}</h1>
 }
 
 export default TaskMessage
