@@ -7,7 +7,7 @@ function TaskItemText({title}){
     return(
         <>
         <span data-tip data-for='textTooltip'>{title}</span>
-        <ToolTip type="light" place="right" id='textTooltip'>Click to complete / active task</ToolTip>
+        <ToolTip type="light" place="right" id='textTooltip'>Click to activate / deactivate task</ToolTip>
         </> 
     )
 }
