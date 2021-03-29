@@ -7,7 +7,22 @@ function TaskItem({id, title, date, onClick}){
     
     
     return(
-        <div className="tasklist-container">
+        <li className="tasklist-container">
+            <div className="tasklist-element" id="tasklist-text">{title}</div>
+            <div className="tasklist-element" id="tasklist-calendar"><TaskListDate date={date} /></div>
+            <div className="tasklist-element" id="tasklist-button"><TaskCompleteButton id={id} onClick={onClick} /></div>
+        </li>
+    )
+}
+
+
+
+
+export default TaskItem
+
+
+
+{/* <div className="tasklist-container">
             <div className="tasklist-element" id="tasklist-text">
                 <li>
                     {title}
@@ -19,11 +34,4 @@ function TaskItem({id, title, date, onClick}){
             <div className="tasklist-element" id="tasklist-button">
                 <TaskCompleteButton id={id} onClick={onClick} />
             </div>
-        </div>
-    )
-}
-
-
-
-
-export default TaskItem
+        </div> */}
