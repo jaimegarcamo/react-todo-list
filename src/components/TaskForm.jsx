@@ -51,7 +51,7 @@ function TaskForm({onSubmit}){
     return(
         <form className='task-form' onSubmit={handleSubmit}>
             <input className="input-task" placeholder="Insert new task" type="text" value={title} onChange={handleInput}/>
-            <input className="input-date" type="date" value={date} onChange={handleDate}/>
+            <input className="input-date" type="date" min={generateTodaysDate()} value={date} onChange={handleDate}/>
             <br></br>
             <button className="button-add" type="submit">Add</button>
             {error && <p className="error">{error}</p>}
