@@ -85,11 +85,23 @@
   float:left;
 }
 
+strikethrough{
+  text-decoration: line-through;
+}
+
 #tasklist-text{
   padding-left: 100px;
   height: 10px;
   width: 300px;
-  color:white
+  color:white;
+}
+
+#tasklist-text-strikethrough{
+  padding-left: 100px;
+  height: 10px;
+  width: 300px;
+  color:coral;
+  text-decoration:line-through;
 }
 
 #tasklist-button{
