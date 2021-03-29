@@ -18,11 +18,11 @@ function App() {
     setTasks(newTasks)
   }
 
-  function handleTaskClick(id){
+  function handleTaskClickDelete(id){
     const newTasks = tasks.filter(task => task.id !== id)
     setTasks(newTasks)
   }
-  
+
   return (
     <div className="App">
       <h1 className="first-title">To Do List</h1>
@@ -36,7 +36,8 @@ function App() {
             id={task.id} 
             title={task.title} 
             date={task.date}
-            onClick={handleTaskClick}
+            onClickDelete={handleTaskClickDelete}
+            onClickAdd={handleSubmit}
           />
         ))}
       </TaskList>
