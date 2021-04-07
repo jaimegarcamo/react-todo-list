@@ -31,7 +31,7 @@ function TaskForm({onSubmit}){
                 id: generateId(),
                 title,
                 date,
-                style: "tasklist-text"
+                completed: false
             })
             setTitle("")
             setError("")

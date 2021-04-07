@@ -4,24 +4,15 @@ import TaskListDate from './TaskListDate'
 import TaskItemText from './TaskItemText'
 
 
-function TaskItem({id, title, date, onClickDelete, onClickAdd}){
+function TaskItem({id, title, date, completed, onClickDelete, onClickComplete}){
     
-    const [style, setStyle] = useState("tasklist-text")
+    let style = "tasklist-text"
 
-    function handleStyle(){
-    
-        let newStyle = ""
-
-        if(style === "tasklist-text"){
-            newStyle = "tasklist-text-strikethrough"
-            setStyle(newStyle)
-        }else{
-            newStyle = "tasklist-text"
-            setStyle(newStyle)
-        }
-
-         //onClickDelete(id)
-         //onClickAdd({id, title, date, style:newStyle})
+    if(completed === true){
+        style =  "tasklist-text-strikethrough"
+    }
+    else{
+        style = "tasklist-text"
     }
 
 
@@ -29,8 +20,8 @@ function TaskItem({id, title, date, onClickDelete, onClickAdd}){
     
     return(
         <li className="tasklist-container">
-            <div className="tasklist-element" id={style} onClick={handleStyle}><TaskItemText title={title} /></div>
-            <div className="tasklist-element" id="tasklist-calendar"><TaskListDate date={date} /></div>
+            <div className="tasklist-element" id={style} onClick={() => onClickComplete(id)}><TaskItemText title={title} /></div>
+            <div className="tasklist-element" id="tasklist-calendar" placeholder="asdf"><TaskListDate date={date} /></div>
             <div className="tasklist-element" id="tasklist-button"><TaskDeleteButton id={id} onClick={onClickDelete} /></div>
         </li>
     )
