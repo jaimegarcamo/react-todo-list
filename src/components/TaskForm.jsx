@@ -1,6 +1,8 @@
 import React, {useState} from 'react'
 import {generateId} from '../utils/generateId'
 import { generateTodaysDate } from '../utils/generateTodaysDate'
+import ToolTip from 'react-tooltip'
+
 
 function TaskForm({onSubmit}){
 
@@ -54,7 +56,8 @@ function TaskForm({onSubmit}){
             <input className="input-task" placeholder="Insert new task" type="text" value={title} onChange={handleInput}/>
             <input className="input-date" type="date" min={generateTodaysDate()} value={date} onChange={handleDate}/>
             <br></br>
-            <button className="button-add" type="submit">Add</button>
+            <button className="button-add" data-tip data-for='botonAddTooltip' type="submit">Add</button>
+            <ToolTip type="light" place="right" id='botonAddTooltip'>Click to Add new task</ToolTip>
             {error && <p className="error">{error}</p>}
         </form>
     )
