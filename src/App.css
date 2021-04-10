@@ -58,6 +58,7 @@
 }
 
 .button-add{
+  font-family: Impact;
   height: 40px;
   width: 498px;
   font-size: 20px;
@@ -66,6 +67,21 @@
   background-color:coral;
   border-radius: 10px;
   
+}
+
+.container-button-clear-completed{
+  padding-left: 400px;
+}
+
+.button-clear-completed{
+  font-family: Impact;
+  height: 40px;
+  width: 250px;
+  font-size: 20px;
+  color:white;
+  font-weight: 600;
+  background-color:coral;
+  border-radius: 10px;
 }
 
 .error{
