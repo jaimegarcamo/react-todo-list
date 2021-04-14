@@ -1,6 +1,32 @@
+/* :root{
+  --backgroud-color: teal;
+  --main-font-color: white;
+  --secondary-font-color: coral;
+}
+
+body{
+  background-color: var(--backgroud-color);
+  color: var(--main-font-color);
+} */
+
 .App {
   padding-left: 0px;
   
+}
+
+body {
+  background-color: teal;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
 
 .first-title{
