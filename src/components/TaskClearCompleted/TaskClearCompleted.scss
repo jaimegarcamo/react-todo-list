@@ -1,0 +1,17 @@
+@use 'base';
+
+.container-button-clear-completed{
+    // padding-left: 400px;
+  }
+  
+.button-clear-completed{
+    font-family: base.$button-font-family;
+    height: base.$button-clear-height;
+    font-size: base.$button-clear-font-size;
+    color: base.$secondary-color;
+    font-weight: base.$button-font-weight;
+    background-color: base.$primary-color;
+    border-radius: base.$button-radius;
+  } 
+
+

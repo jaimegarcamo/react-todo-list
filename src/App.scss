@@ -1,0 +1,50 @@
+/* :root{
+  --backgroud-color: teal;
+  --main-font-color: white;
+  --secondary-font-color: coral;
+}
+
+body{
+  background-color: var(--backgroud-color);
+  color: var(--main-font-color);
+} */
+
+@use 'base';
+
+.App {
+   padding-left: 0px;
+  
+}
+
+body {
+  background-color: base.$background-color;
+  font-family:  sans-serif;
+}
+
+.first-title{
+  color: base.$secondary-color;
+  font-size: base.$title-font-size;
+}
+
+.paragraf{
+  color:base.$secondary-color;
+  font-weight: base.$paragraf-font-weight;
+  font-size: base.$paragraf-font-size;
+}
+
+.count-tasks{
+  color: base.$secondary-color;
+  font-weight: base.$counter-font-weight;
+  color: base.$primary-color;
+}
+
+
+ul {
+  padding-left: 0px;
+}
+
+
+
+
+
+

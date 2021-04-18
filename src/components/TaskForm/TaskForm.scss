@@ -1,0 +1,53 @@
+@use 'base';
+
+
+
+.task-form{
+    color: base.$secondary-color;
+    display: flex;
+    // padding-left: 268px;
+    // padding-top: 90px;
+  }
+
+
+.input-task{
+    border-top-left-radius: base.$input-radius;
+    border-bottom-left-radius: base.$input-radius;
+    height: base.$input-height;
+    width: base.$input-width;
+    color:base.$primary-color;
+    font-weight: base.$input-font-weight;
+    font-size: base.$input-font-size;
+    text-transform:uppercase;
+  }
+  
+  .input-date{
+    border-top-right-radius: base.$input-radius ;
+    border-bottom-right-radius: base.$input-radius;
+    height: base.$input-date-height;
+    width: base.$input-date-width;
+    font-size: base.$input-date-font-size;
+    color:base.$input-color;
+    font-weight: base.$input-font-weight;
+    text-transform:uppercase;
+
+  }
+
+  .button-add{
+    font-family: base.$button-font-family;
+    height: base.$button-add-height;
+    width: base.$button-add-width;
+    font-size: base.$button-font-size;
+    color: base.$secondary-color;
+    font-weight: base.$button-font-weight;
+    background-color:base.$primary-color;
+    border-radius: base.$button-radius;
+    
+  }
+
+.error{
+    color: base.$primary-color;
+    padding-left: base.$error-padding;
+    font-weight: base.$error-font-weight;
+    font-size: 2vw;
+  }

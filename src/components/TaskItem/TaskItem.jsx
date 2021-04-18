@@ -1,7 +1,8 @@
 import React, {useState} from 'react'
-import TaskDeleteButton from './TaskDeleteButton'
-import TaskListDate from './TaskListDate'
-import TaskItemText from './TaskItemText'
+import TaskDeleteButton from '../TaskDeleteButton/TaskDeleteButton'
+import TaskListDate from '../TaskListDate/TaskListDate'
+import TaskItemText from '../TaskItemText/TaskItemText'
+import '../TaskItem/TaskItem.scss'
 
 
 function TaskItem({id, title, date, completed, onClickDelete, onClickComplete}){
@@ -15,9 +16,6 @@ function TaskItem({id, title, date, completed, onClickDelete, onClickComplete}){
         style = "tasklist-text"
     }
 
-
-
-    
     return(
         <li className="tasklist-container">
             <div className="tasklist-element" id={style} onClick={() => onClickComplete(id)}><TaskItemText title={title} /></div>

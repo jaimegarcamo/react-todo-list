@@ -1,0 +1,11 @@
+@use 'base';
+
+
+.button-delete{
+    background-color: base.$primary-color;
+    color: base.$secondary-color;
+    font-weight: 600;
+    font-size: 2vw;
+    margin-bottom: 12px;
+    width: base.$button-delete-width;
+  }

@@ -1,8 +1,9 @@
 import React, {useState} from 'react'
 import ToolTip from 'react-tooltip'
+import '../TaskClearCompleted/TaskClearCompleted.scss'
+
 
 function TaskClearCompleted({onClick}){
-
 
     return(
         <div className="container-button-clear-completed">

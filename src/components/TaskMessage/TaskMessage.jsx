@@ -1,4 +1,6 @@
 import React from 'react'
+import '../TaskMessage/TaskMessage.scss'
+
 
 function TaskMessage({tasks}){
 
