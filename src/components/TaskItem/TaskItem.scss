@@ -2,26 +2,31 @@
 
 
 .tasklist-container {
-    display: flex;
+    display: grid;
 }
 
 .tasklist-element {
-    border: 1px solid red;
+    //border: 1px solid red;
+    text-align: left;
 }
 
 #tasklist-text{
-    width: 60vw;
+    font-size: 3vw;
     color: base.$secondary-color;
     text-transform: uppercase;
+    margin-bottom: 5px;
   }
   
   #tasklist-text-strikethrough{
     width: 60vw;
+    font-size: 2vw;
     color: base.$primary-color;
+    text-transform: lowercase;
     text-decoration: line-through;
   }
+
   
   #tasklist-button{
-    padding-left: 1px;
+    font-size: 1vw;
   }
   

@@ -4,5 +4,11 @@
     width: base.$info-date-width;
     color: base.$primary-color;
     font-size: base.$info-date-font-size;
-    font-family: base.$button-font-family;
-  }
+    font-family: base.$button-font-family; 
+}
+
+.deadline {
+    color: base.$primary-color;
+    font-weight: 600;;
+    font-size: 2vw;
+}
