@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import TaskDeleteButton from '../TaskDeleteButton/TaskDeleteButton'
 import TaskListDate from '../TaskListDate/TaskListDate'
 import TaskItemText from '../TaskItemText/TaskItemText'
+import '../TaskItem/TaskItem.scss'
 
 
 function TaskItem({id, title, date, completed, onClickDelete, onClickComplete}){

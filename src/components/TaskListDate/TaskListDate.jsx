@@ -1,5 +1,6 @@
 import React from 'react'
 import ToolTip from 'react-tooltip'
+import '../TaskListDate/TaskListDate.scss'
 
 function TaskListDate({date}){
     

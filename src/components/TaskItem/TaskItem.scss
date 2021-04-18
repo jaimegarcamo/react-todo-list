@@ -1,0 +1,27 @@
+@use 'base';
+
+
+.tasklist-container {
+    display: flex;
+}
+
+.tasklist-element {
+    border: 1px solid red;
+}
+
+#tasklist-text{
+    width: 60vw;
+    color: base.$secondary-color;
+    text-transform: uppercase;
+  }
+  
+  #tasklist-text-strikethrough{
+    width: 60vw;
+    color: base.$primary-color;
+    text-decoration: line-through;
+  }
+  
+  #tasklist-button{
+    padding-left: 1px;
+  }
+  

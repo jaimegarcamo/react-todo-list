@@ -56,7 +56,6 @@ function TaskForm({onSubmit}){
         <form className='task-form' onSubmit={handleSubmit}>
             <input className="input-task" placeholder="Insert new task" type="text" value={title} onChange={handleInput}/>
             <input className="input-date" type="date" min={generateTodaysDate()} value={date} onChange={handleDate}/>
-            <br></br>
             <button className="button-add" data-tip data-for='botonAddTooltip' type="submit">Add</button>
             <ToolTip type="light" place="right" id='botonAddTooltip'>Click to Add new task</ToolTip>
             {error && <p className="error">{error}</p>}

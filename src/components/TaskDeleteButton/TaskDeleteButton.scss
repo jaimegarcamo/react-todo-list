@@ -1,0 +1,9 @@
+@use 'base';
+
+
+.button-delete{
+    background-color: base.$primary-color;
+    color: base.$secondary-color;
+    font-weight: 600;
+    
+  }

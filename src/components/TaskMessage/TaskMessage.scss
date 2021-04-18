@@ -1,0 +1,7 @@
+@use 'base';
+
+.task-message{
+    color:base.$primary-color;
+    font-weight: base.$task-message-font-weight;
+    font-size: base.$task-message-font-size;
+  }

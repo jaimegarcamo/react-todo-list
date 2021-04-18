@@ -1,0 +1,8 @@
+@use 'base';
+
+.info-date{
+    width: base.$info-date-width;
+    color: base.$primary-color;
+    font-size: base.$info-date-font-size;
+    font-family: base.$button-font-family;
+  }

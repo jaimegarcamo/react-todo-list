@@ -7,27 +7,36 @@ $secondary-color: white;
 //BUTTON
 $buttons-font: Impact;
 $button-radius: 0.6rem;
-$button-font-size: 1.3rem;
-$button-clear-font-size: 1rem;
+$button-font-size: 2vw;
+$button-clear-font-size: 2vw;
+$button-clear-height: 2.5em;
 $button-font-family: Verdana, sans-serif;
 $button-font-weight: 600;
+$button-height: 2.5rem;
+$button-add-width: 15vw;
+$button-add-height: 7.1vw;
 
 
 //TITLE
-$title-font-size: 6.3rem;
+$title-font-size: 15vw;
 
 
 
 //INPUT
 $input-radius: 0.6rem;
-$input-font-size: 1rem;
+$input-font-size: 3vw;
+$input-date-font-size: 2vw;
 $input-font-weight: 100;
 $input-color: grey;
+$input-date-height: 7.1vw;
+$input-date-width: 25vw;
+$input-width: 50vw;
+$input-height: 7vw;
 
 
 //PARAGRAF
 $paragraf-font-weight: 100;
-$paragraf-font-size: 1.8rem;
+$paragraf-font-size: 4vw;
 
 //COUNTER
 $counter-font-weight: 900;
@@ -35,4 +44,14 @@ $counter-font-weight: 900;
 
 //TASK MESSAGE
 $task-message-font-weight: 900;
-$task-message-font-size: 2.7rem;
+$task-message-font-size: 8vw;
+
+//ERROR
+$error-padding: 1rem;
+$error-font-weight: 600;
+
+
+//INFO DATE
+$info-date-height: 1.05rem;
+$info-date-width: 7rem;
+$info-date-font-size: 0.6rem;

@@ -4,6 +4,7 @@
 
 .task-form{
     color: base.$secondary-color;
+    display: flex;
     // padding-left: 268px;
     // padding-top: 90px;
   }
@@ -12,28 +13,28 @@
 .input-task{
     border-top-left-radius: base.$input-radius;
     border-bottom-left-radius: base.$input-radius;
-    height: 45px;
-    width: 300px;
-    font-size: base.$input-font-size;
+    height: base.$input-height;
+    width: base.$input-width;
     color:base.$primary-color;
     font-weight: base.$input-font-weight;
-  
+    font-size: base.$input-font-size;
+    text-transform:uppercase;
   }
   
   .input-date{
     border-top-right-radius: base.$input-radius ;
     border-bottom-right-radius: base.$input-radius;
-    height: 46px;
-    width: 185px;
-    font-size: base.$input-font-size;
+    height: base.$input-date-height;
+    width: base.$input-date-width;
+    font-size: base.$input-date-font-size;
     color:base.$input-color;
     font-weight: base.$input-font-weight;
   }
 
   .button-add{
     font-family: base.$button-font-family;
-    height: 40px;
-    width: 498px;
+    height: base.$button-add-height;
+    width: base.$button-add-width;
     font-size: base.$button-font-size;
     color: base.$secondary-color;
     font-weight: base.$button-font-weight;
@@ -42,9 +43,9 @@
     
   }
 
-
 .error{
-    color:coral;
-    padding-left: 20px;
-    font-weight: 600;
+    color: base.$primary-color;
+    padding-left: base.$error-padding;
+    font-weight: base.$error-font-weight;
+    font-size: 2vw;
   }

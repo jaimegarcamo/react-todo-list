@@ -73,6 +73,7 @@ function App() {
       <p className="paragraf">Pending Tasks: <span className="count-tasks">{pendingTasks}</span></p>
       <p className="paragraf">Completed Tasks: <span className="count-tasks">{completedTasksNumber}</span></p>
       <TaskClearCompleted onClick={handleClearCompletedTasks} />
+      <br></br>
       <TaskForm onSubmit={handleSubmit}/>
       <TaskMessage tasks={tasks.length} />
       <TaskList >
