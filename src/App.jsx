@@ -1,11 +1,11 @@
 import React , {useState, useEffect} from 'react'
-import TaskForm from './components/TaskForm'
-import TaskList from './components/TaskList'
-import TaskItem from './components/TaskItem'
+import TaskForm from './components/TaskForm/TaskForm'
+import TaskList from './components/TaskList/TaskList'
+import TaskItem from './components/TaskItem/TaskItem'
 import useLocalStorage from './hooks/useLocalStorage'
-import TaskMessage from './components/TaskMessage'
-import TaskClearCompleted from './components/TaskClearCompleted'
-import './App.css'
+import TaskMessage from './components/TaskMessage/TaskMessage'
+import TaskClearCompleted from './components/TaskClearCompleted/TaskClearCompleted'
+import './App.scss'
 
 
 

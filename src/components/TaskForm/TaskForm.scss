@@ -1,0 +1,50 @@
+@use 'base';
+
+
+
+.task-form{
+    color: base.$secondary-color;
+    // padding-left: 268px;
+    // padding-top: 90px;
+  }
+
+
+.input-task{
+    border-top-left-radius: base.$input-radius;
+    border-bottom-left-radius: base.$input-radius;
+    height: 45px;
+    width: 300px;
+    font-size: base.$input-font-size;
+    color:base.$primary-color;
+    font-weight: base.$input-font-weight;
+  
+  }
+  
+  .input-date{
+    border-top-right-radius: base.$input-radius ;
+    border-bottom-right-radius: base.$input-radius;
+    height: 46px;
+    width: 185px;
+    font-size: base.$input-font-size;
+    color:base.$input-color;
+    font-weight: base.$input-font-weight;
+  }
+
+  .button-add{
+    font-family: base.$button-font-family;
+    height: 40px;
+    width: 498px;
+    font-size: base.$button-font-size;
+    color: base.$secondary-color;
+    font-weight: base.$button-font-weight;
+    background-color:base.$primary-color;
+    border-radius: base.$button-radius;
+    
+  }
+
+
+.error{
+    color:coral;
+    padding-left: 20px;
+    font-weight: 600;
+  }

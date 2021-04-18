@@ -1,0 +1,118 @@
+/* :root{
+  --backgroud-color: teal;
+  --main-font-color: white;
+  --secondary-font-color: coral;
+}
+
+body{
+  background-color: var(--backgroud-color);
+  color: var(--main-font-color);
+} */
+
+@use 'base';
+
+.App {
+   padding-left: 0px;
+  
+}
+
+body {
+  background-color: base.$background-color;
+  font-family:  sans-serif;
+}
+
+.first-title{
+  color: base.$secondary-color;
+  font-size: base.$title-font-size;
+}
+
+.paragraf{
+  color:base.$secondary-color;
+  font-weight: base.$paragraf-font-weight;
+  font-size: base.$paragraf-font-size;
+}
+
+.count-tasks{
+  color: base.$secondary-color;
+  font-weight: base.$counter-font-weight;
+  color: base.$primary-color;
+}
+
+.task-message{
+  color:base.$primary-color;
+  font-weight: base.$task-message-font-weight;
+  font-size: base.$task-message-font-size;
+}
+
+
+
+.tasklist-container{
+  overflow: hidden;
+  color: white;
+  font-size: 20px;
+}
+
+
+.tasklist-element{
+  float:left;
+}
+
+strikethrough{
+  text-decoration: line-through;
+}
+
+#tasklist-text{
+  padding-left: 100px;
+  height: 10px;
+  width: 300px;
+  color:white;
+}
+
+#tasklist-text-strikethrough{
+  padding-left: 100px;
+  height: 10px;
+  width: 300px;
+  color:coral;
+  text-decoration:line-through;
+}
+
+#tasklist-button{
+  padding-left: 1px;
+}
+
+.info-date{
+  height: 17px;
+  width: 125px;
+  color:coral;
+  margin-block-start: 4px;
+  margin-left: 1px;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+
+.button-delete{
+  background-color: coral;
+  color:white;
+  font-weight: 600;
+}
+
+ul{
+  color: white;
+  padding-left: 170px;
+  padding-top: 20px;
+  font-size: 20px;
+  overflow: hidden;
+}
+
+
+li{
+  color:white;
+  text-transform: capitalize;
+  font-style: italic;
+  font-weight: 900;
+
+}
+
+
+
+

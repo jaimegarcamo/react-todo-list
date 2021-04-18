@@ -1,7 +1,8 @@
 import React, {useState} from 'react'
-import {generateId} from '../utils/generateId'
-import { generateTodaysDate } from '../utils/generateTodaysDate'
+import {generateId} from '../../utils/generateId'
+import { generateTodaysDate } from '../../utils/generateTodaysDate'
 import ToolTip from 'react-tooltip'
+import '../TaskForm/TaskForm.scss'
 
 
 function TaskForm({onSubmit}){
