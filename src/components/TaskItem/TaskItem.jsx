@@ -18,7 +18,7 @@ function TaskItem({id, title, date, completed, onClickDelete, onClickComplete}){
 
     return(
         <li className="tasklist-container">
-            <div className="tasklist-element" id={style} onClick={() => onClickComplete(id)}><TaskItemText title={title} /></div>
+            <div className="tasklist-element" id={style} onClick={() => onClickComplete(id, !completed)}><TaskItemText title={title} /></div>
             <div className="tasklist-element" id="tasklist-calendar" placeholder="asdf"><TaskListDate date={date} /></div>
             <div className="tasklist-element" id="tasklist-button"><TaskDeleteButton id={id} onClick={onClickDelete} /></div>
         </li>
