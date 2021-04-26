@@ -32,7 +32,7 @@ function App() {
 
 
   useEffect(() => {
-    document.title = `${tasks.length - completedTasksNumber} tasks left to do`
+    document.title = `${serverTasks.length - completedTasksNumber} tasks left to do`
   }, [pendingTasks])
 
   //CREATE TASK
@@ -62,7 +62,7 @@ async function handleTaskClickDelete(id){
  async function handleClickComplete(id, completed){
     
     await api.patchTask(id, {completed: completed})
-    const tasks = await api.getAllTask()
+    const tasks = await api.getAllTasks()
     setServerTasks(tasks)
 
   
