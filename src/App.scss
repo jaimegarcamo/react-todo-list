@@ -12,39 +12,36 @@ body{
 @use 'base';
 
 .App {
-   padding-left: 0px;
-  
+  padding-left: 0px;
 }
 
 body {
   background-color: base.$background-color;
-  font-family:  sans-serif;
+  font-family: sans-serif;
 }
 
-.first-title{
+.first-title {
   color: base.$secondary-color;
   font-size: base.$title-font-size;
 }
 
-.paragraf{
-  color:base.$secondary-color;
+.paragraf {
+  color: base.$secondary-color;
   font-weight: base.$paragraf-font-weight;
   font-size: base.$paragraf-font-size;
 }
 
-.count-tasks{
+.count-tasks {
   color: base.$secondary-color;
   font-weight: base.$counter-font-weight;
   color: base.$primary-color;
 }
 
+h1 {
+  color: base.$secondary-color;
+  font-size: 15px;
+}
 
 ul {
   padding-left: 0px;
 }
-
-
-
-
-
-
